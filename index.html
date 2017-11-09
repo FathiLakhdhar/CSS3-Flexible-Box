@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS3 Flexible Box</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div>
+      <header>
+        <h1>CSS3 Flexible Box</h1>
+        <p>
+          Flexible boxes, or flexbox, is a new layout mode in CSS3.
+        </p>
+      </header>
+
+      <div class="panel">
+        <h2>flex-direction</h2>
+        <div>
+          <ul>
+            <li>
+              <label><input type="radio" name="flex-direction" value="column"/>column</label>
+            </li>
+            <li>
+              <label><input type="radio" name="flex-direction" value="column-reverse"/>column-reverse</label>
+            </li>
+            <li>
+              <label><input type="radio" name="flex-direction" value="row" checked/>row</label>
+            </li>
+            <li>
+              <label><input type="radio" name="flex-direction" value="row-reverse"/>row-reverse</label>
+            </li>
+          </ul>   
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>flex-wrap</h2>
+        <div>
+          <ul>
+            <li>
+              <label><input type="radio" name="flex-wrap" value="nowrap" checked/>nowrap <span>(default)</span></label>
+            </li>
+            <li>
+              <label><input type="radio" name="flex-wrap" value="wrap" />wrap</label>
+            </li>
+            <li>
+              <label><input type="radio" name="flex-wrap" value="wrap-reverse"/>wrap-reverse</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>flex-flow</h2>
+        <div>
+          <p>flex-flow :(flex-direction) (flex-wrap);</p>
+          <ul>
+            <li>flex-flow: column nowrap;</li>
+            <li>flex-flow: column wrap;</li>
+            <li>flex-flow: column wrap-reverse;</li>
+            <li>flex-flow: row nowrap;</li>
+            <li>...</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="panel">
+        <h2>align-items</h2>
+        <div>
+          <ul>
+            <li>
+              <label><input type="radio" name="align-items" value="baseline" />baseline</label>
+            </li>
+            <li>
+              <label><input type="radio" name="align-items" value="center" />center</label>
+            </li>
+            <li>
+              <label><input type="radio" name="align-items" value="flex-start" />flex-start</label>
+            </li>
+            <li>
+              <label><input type="radio" name="align-items" value="flex-end" />flex-end</label>
+            </li>
+            <li>
+              <label><input type="radio" name="align-items" value="stretch" checked/>stretch <span>(default)</span></label>
+            </li>
+          </ul>  
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>align-content</h2>
+        <div>
+          <ul>
+            <li>
+              <label><input type="radio" name="align-content" value="center" />center</label>
+            </li>
+            <li>
+              <label><input type="radio" name="align-content" value="flex-start" />flex-start</label>
+            </li>
+            <li>
+              <label><input type="radio" name="align-content" value="flex-end" />flex-end</label>
+            </li>
+            <li>
+              <label><input type="radio" name="align-content" value="space-around" />space-around</label>
+            </li>
+            <li>
+              <label><input type="radio" name="align-content" value="space-between" />space-between</label>
+            </li>
+            <li>
+              <label><input type="radio" name="align-content" value="stretch" checked/>stretch <span>(default)</span></label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      
+      <div class="panel">
+        <h2>justify-content</h2>
+        <div>
+          <ul>
+            <li>
+              <label><input type="radio" name="justify-content" value="center" />center</label>
+            </li>
+            <li>
+              <label><input type="radio" name="justify-content" value="flex-start" checked/>flex-start <span>(default)</span></label>
+            </li>
+            <li>
+              <label><input type="radio" name="justify-content" value="flex-end" />flex-end</label>
+            </li>
+            <li>
+              <label><input type="radio" name="justify-content" value="space-around" />space-around</label>
+            </li>
+            <li>
+              <label><input type="radio" name="justify-content" value="space-between" />space-between</label>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="panel">
+        <h2>Alignment</h2>
+        <img src="img/flexbox.jpg" alt="align resume" width="100%"/>
+      </div>
+      
+      <div class="panel">
+        <h2>Order</h2>
+        <div>
+          <ul>
+            <li>
+              <label><input type="radio" name="order-box" value="0" checked/>Init</label> 
+              -> 
+              <label><input type="radio" name="order-box" value="1" /> Modify</label>
+            </li>
+            <li>Box 1 -> {order : 3}</li>
+            <li>Box 2 -> {order : 2}</li>
+            <li>Box 3 -> {order : 4}</li>
+            <li>Box 4 -> {order : 1}</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="panel">
+        <h2>flex-grow</h2>
+        <div>
+          <p>> flex-grow: Number (default 0)</p>
+          <p>> The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items.</p>
+        </div>
+      </div>
+      
+      <div class="panel">
+        <h2>flex</h2>
+        <div>
+          <p>> flex: (flex-grow) (flex-shrink) (flex-basis);</p>
+          <i>> flex: 0 1 auto; (default)</i>
+        </div>
+      </div>
+      
+      
+      <div class="panel">
+        <h2>align-self</h2>
+        <div>
+          <p>Ex : box 3</p>
+          <ul>
+            <li>
+              <label>
+                auto <span >(default)</span>
+                <input type="radio" name="align-self" value="auto" checked/>
+              </label>
+            </li>
+            <li>
+              <label>
+                baseline
+                <input type="radio" name="align-self" value="baseline"/>
+              </label>
+            </li>
+            <li>
+              <label>
+                center
+                <input type="radio" name="align-self" value="center"/>
+              </label>
+            </li>
+            <li>
+              <label>
+                flex-start
+                <input type="radio" name="align-self" value="flex-start"/>
+              </label>
+            </li>
+            <li>
+              <label>
+                flex-end
+                <input type="radio" name="align-self" value="flex-end"/>
+              </label>
+            </li>
+            <li>
+              <label>
+                stretch
+                <input type="radio" name="align-self" value="stretch"/>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      
+    </div>
+    
+    
+    <div class="fixed">
+        <div class="container">
+          <div class="danger" ><p>1</p></div>
+          <div class="primary"><p>2</p></div>
+          <div class="success"><p>3</p></div>
+          <div class="warning"><p>4</p></div>
+        </div>
+    </div>
+    
+
+    <script type="text/javascript" src="script.js"></script>
+    
+  </body>
+</html>

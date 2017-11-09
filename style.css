@@ -1,0 +1,101 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Lato:100|Ubuntu+Mono');
+
+body {
+  width: 100%;
+  background-color: white;
+  font-family: "Ubuntu Mono", monospace;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+body>div.left{
+  min-width: 600px;
+  padding: 10px;
+  border: 1px solid;
+}
+
+div.fixed{
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 300px;
+  height: 300px;
+}
+
+header>h1{}
+
+h1,h2,h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+  padding-left: 10px
+}
+
+
+.panel>h2{border: 1px solid #44d577;border-left: 8px solid #44d577;}
+.panel>div{border-left: 2px solid;position: relative;padding: 5px}
+.panel>div:after{
+  content: '_';
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.panel>div:before{
+  content: '_';
+  position: absolute;
+  left: 0px;
+  top: -17px;
+}
+
+
+.container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container>div{
+  display: table;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+li{list-style: none;margin: 10px auto;}
+input[type="radio"]{margin: 0 10px 0 0;}
+
+
+.container>div:nth-child(1){order:1;width: 150px}
+.container>div:nth-child(2){order:2;height: 80px}
+.container>div:nth-child(3){order:3;height: 30px}
+.container>div:nth-child(4){order:4;height: 90px}
+
+.danger {background-color: #d44a4a;}
+.primary{background-color: #4baeeb;}
+.warning{background-color: #f58b2f;}
+.success{background-color: #44d577;}
+
+
+@media only screen and (max-width: 500px){
+  div.fixed{
+    top: auto;
+    bottom: 0;
+    width: 150px;
+    height: 150px;
+  }
+  .container>div{
+    font-size: 12px;
+  }
+  .container>div:nth-child(1){width: 75px;height: 30px;}
+  .container>div:nth-child(2){width: 30px;height: 40px;}
+  .container>div:nth-child(3){width: 35px;height: 15px;}
+  .container>div:nth-child(4){width: 30px;height: 55px;}
+  
+}
